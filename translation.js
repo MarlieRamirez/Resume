@@ -29,7 +29,7 @@ const translations = {
         ]
       },
     ],
-    "academic-title": "Academic Formation",
+    "academic-title": "Formal Education",
     "academic-container": [
       {
         "title": "Central American University of Nicaragua",
@@ -45,6 +45,20 @@ const translations = {
         "title": "High School Diploma, Colegio Pureza de María, Nicaragua",
         "year": "2019",
         "description": ""
+      }
+
+    ],
+    "complementary-title": "Complementary Education",
+    "complementary-container": [
+      {
+        "title": "Flutter & Dart",
+        "year": "2025",
+        "description": "Completion of course through UDEMY"
+      },
+      {
+        "title": "English Program - Keiser",
+        "year": "2020",
+        "description": "English course through Keiser University - Versant English Placement Test equivalent to B2"
       }
 
     ],
