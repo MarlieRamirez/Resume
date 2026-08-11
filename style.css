@@ -1,0 +1,114 @@
+/* Hide the PDF button when printing or exporting to PDF */
+@media print {
+  #download-pdf-btn {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+  }
+
+  main {
+    display: block !important;
+  }
+
+  .two-columns {
+    column-count: 2 !important;
+  }
+
+  section,
+  header {
+    page-break-inside: avoid;
+  }
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  max-width: 960px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: .6em;
+  padding-top: 1em;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  margin-top: 3pc;
+  letter-spacing: .1em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  border-bottom: solid 2px black; 
+}
+
+h3 {
+  font-size: 1em;
+  padding-bottom: 1em;
+}
+
+
+header {
+  text-align: center;
+  margin: auto 2em;
+}
+
+section {
+  margin: auto 1em 4em 2em;
+}
+
+i {
+  margin-right: .5em;
+}
+
+p {
+  margin: .2em auto
+}
+
+hr {
+  border: none;
+  background-color: lightgray;
+  height: 1px;
+}
+
+h2,
+h3 {
+  font-weight: 100;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+
+.column-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); 
+}
+
+.list-item{
+  padding: 0 10px 0 10px;
+}
+
+.project-header{
+  margin-top: 1pc;
+  margin-bottom: 0.5pc;
+  width: 100%;
+  display: inline-flex;
+}
+
+.project-year{
+  width: auto;
+  margin-left: auto;
+}
+
+.project-role{
+  margin-top: 1pc;
+  border-left: solid lightgray 5px;
+  padding-left: 3vw;
+  color: rgb(76, 76, 76);
+}

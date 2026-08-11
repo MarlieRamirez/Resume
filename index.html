@@ -1,0 +1,82 @@
+<html lang="es">
+
+
+<head>
+  <meta charset="UTF-8">
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Curriculum Vitae</title>
+</head>
+
+<body>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="pdf-export.js"></script>
+  <script src="translation.js"></script>
+
+
+  <div>
+    <select id="lang-selector">
+      <option value="es">Español</option>
+      <option value="en">English</option>
+    </select>
+  </div>
+
+  <div style="text-align:right; margin: 10px;">
+    <button id="download-pdf-btn" style="padding: 8px 16px; font-size: 1em; cursor: pointer;">Descargar como
+      PDF</button>
+  </div>
+  <header id="header">
+    <h1>
+      <strong>Marlie Lucia </strong> <br>Ramirez
+    </h1>
+
+    <div class="subtitle" style="margin-top: 1pc;">
+      <strong data-key="contact-title">Contacto: </strong>
+      <i class="fa fa-envelope" aria-hidden="true"></i>
+      <a href="mailto:marlieramireza@gmail.com">marlieramireza@gmail.com</a>
+      /
+      <i class="fab fa-github" aria-hidden="true"></i>
+      <a href="https://github.com/MarlieRamirez">MarlieRamirez</a>
+
+    </div>
+  </header>
+  <main>
+
+    <section id="abilities">
+      <h2 data-key="abilities-title">Habilidades</h2>
+      <ul data-key="abilities-list" class="column-list">
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2 data-key="project-title">Proyecto</h2>
+
+      <div data-key="projects-container" class="">
+        
+      </div>
+
+      
+    </section
+    >
+    <section id="academic">
+      <h2 data-key="academic-title"></h2>
+      <div data-key="academic-container" class="">
+        
+      </div>
+    </section>
+
+    <section id="complementary">
+      <h2 data-key="complementary-title"></h2>
+      <div data-key="complementary-container" class="">
+        
+      </div>
+    </section>
+
+
+    
+  </main>
+</body>
+
+</html>
