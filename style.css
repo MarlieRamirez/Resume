@@ -112,3 +112,21 @@ h3 {
   padding-left: 3vw;
   color: rgb(76, 76, 76);
 }
+
+.column-container{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 2fr)); 
+  column-gap: -2px;
+}
+
+.options{
+  display: flex;
+  justify-content: right;
+  column-gap: 0.5pc;
+  margin: 1pc;
+}
+
+.options-item{
+  font-size: 1em; 
+  cursor: pointer;
+}

@@ -48,6 +48,44 @@ const translations = {
       }
 
     ],
+    "development-title": "Development Tools",
+    "development-container": [
+      {
+        "title": "Raw Languages:",
+        "year": "",
+        "description": "PHP, Java, Javascript, Kotlin, Dart, Python, C++, HTML, CSS, C#"
+      },
+      {
+        "title": "Integrated Development Environments:",
+        "year": "",
+        "description": "Eclipse, Visual Studio, Visual Studio Code, Android Studio, IntelliJ IDEA"
+      },
+      {
+        "title": "Database Engines:",
+        "year": "",
+        "description": "MS SQL Server, MySql"
+      },
+      {
+        "title": "Operating Systems:",
+        "year": "",
+        "description": "Windows, Ubunto, CentOS, Fedora"
+      },
+      {
+        "title": "Frameworks:",
+        "year": "",
+        "description": "React, Vue.js, Laravel, Django, Flutter"
+      },
+      {
+        "title": "Project Management:",
+        "year": "",
+        "description": "SCRUM, KANBAN, ClickUp, Trello"
+      },
+      {
+        "title": "Other tools:",
+        "year": "",
+        "description": "Git, Github, Node.js"
+      },
+    ]
 
   },
   "es": {
@@ -112,6 +150,45 @@ const translations = {
       }
 
     ],
+    "development-title": "Herramientas de desarrollo",
+    "development-container": [
+      {
+        "title": "Lenguajes en bruto:",
+        "year": "",
+        "description": "PHP, Java, Javascript, Kotlin, Dart, Python, C++, HTML, CSS, C#"
+      },
+      {
+        "title": "Entornos de desarrollo integrados:",
+        "year": "",
+        "description": "Eclipse, Visual Studio, Visual Studio Code, Android Studio, IntelliJ IDEA"
+      },
+      {
+        "title": "Motores de Bases de Datos:",
+        "year": "",
+        "description": "MS SQL Server, MySql"
+      },
+      {
+        "title": "Sistemas Operativos:",
+        "year": "",
+        "description": "Windows, Ubunto, CentOS, Fedora"
+      },
+      {
+        "title": "Frameworks:",
+        "year": "",
+        "description": "React, Vue.js, Laravel, Django, Flutter"
+      },
+      {
+        "title": "Gestión de Proyectos:",
+        "year": "",
+        "description": "SCRUM, KANBAN, ClickUp, Trello"
+      },
+      {
+        "title": "Otras herramientas:",
+        "year": "",
+        "description": "Git, Github, Node.js"
+      },
+    ]
+
 
   }
 }
@@ -121,10 +198,10 @@ window.onload = function () {
   const selector = document.getElementById("lang-selector");
   selector.value = "es"
 
-  function getContainersList(list){
+  function getContainersList(list) {
     var html = '';
-      list.forEach(x=>{
-        html += `<div class='project-role'>${x}</div>`
+    list.forEach(x => {
+      html += `<div class='project-role'>${x}</div>`
     });
     return html
   }
@@ -152,8 +229,8 @@ window.onload = function () {
         //Containers Sets
         else if (key.includes("container")) {
           var html = "";
-          
-          
+
+
           translations[lang][key].forEach(x => {
             html += `
             <div class="project">
